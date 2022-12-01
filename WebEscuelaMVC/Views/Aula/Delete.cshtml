@@ -1,0 +1,27 @@
+﻿
+@model WebEscuelaMVC.Models.Aula
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h2>Delete</h2>
+<h2>@Model.Numero - @Model.Estado</h2>
+<p>Desea eliminar este aula?</p>
+
+@using (Html.BeginForm("Delete", "Aula", FormMethod.Post))
+{
+    <div>
+        <spam>@Html.DisplayNameFor(model => model.Numero)</spam>
+        <spam>@Html.DisplayFor(model => model.Numero)</spam>
+        <spam>@Html.DisplayNameFor(model => model.Estado)</spam>
+        <spam>@Html.DisplayFor(model => model.Estado)</spam>
+    </div>
+
+
+    <input type="submit" value="Eliminar" />
+
+}
+
+<p>
+    @Html.ActionLink("Volver a index", "Index", "Aula")
+</p>

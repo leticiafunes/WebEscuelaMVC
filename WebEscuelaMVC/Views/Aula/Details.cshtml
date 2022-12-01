@@ -1,0 +1,26 @@
+﻿@model WebEscuelaMVC.Models.Aula
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<fieldset>
+    <legend>Detalle Aula</legend>
+    <div>
+        @Html.DisplayNameFor(model => model.AulaId)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.AulaId)
+    </div>
+
+    <div>
+        @Html.DisplayNameFor(model => model.Estado)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Estado)
+    </div>
+
+</fieldset>
+
+<p>
+    @Html.ActionLink("Volver a index", "Index", "Auto")
+</p>

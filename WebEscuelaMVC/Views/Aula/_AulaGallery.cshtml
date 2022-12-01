@@ -1,0 +1,34 @@
+﻿
+
+@model IEnumerable<WebEscuelaMVC.Models.Aula>
+
+<div class="grillatitulo">
+    <!-- contenedor -->
+    <div> Número Aula</div>
+    <div> Estado</div>
+
+</div>
+
+
+@foreach (var item in Model)
+{
+
+
+    <div class="flexfila">
+        <!-- contenedor -->
+        <div class="item-1"> @Html.DisplayFor(model => item.Numero)</div>
+        <div class="item-2"> @Html.DisplayFor(model => item.Estado)</div>
+        <div class="item-3">@Html.ActionLink("Edit", "Edit", new { id = item.AulaId }, Model) </div>
+        <div class="item-4">@Html.ActionLink("Delete", "Delete", new { id = item.AulaId } ) </div>
+
+
+
+    </div>
+
+    
+
+
+
+
+
+}

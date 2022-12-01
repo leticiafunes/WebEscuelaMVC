@@ -1,0 +1,82 @@
+﻿.grilla {
+    display: grid;
+    grid-template-columns: 300px;
+
+    
+}
+
+.grillatitulo {
+    display: grid;
+    grid-template-columns: 150px 150px;
+   
+}
+
+.grillatitulo div {
+        background-color:darkorange;
+}
+
+.flexfila{
+    display: flex;
+}
+
+.item-1 {
+    background-color:burlywood;
+    color: white;
+    width: 250px;
+}
+
+
+.item-2 {
+    background-color: darkgoldenrod;
+    color: white;
+    width: 250px;
+}
+
+
+.item-3 {
+    background-color: burlywood;
+    color: white;
+    width: 250px;
+}
+
+
+
+.item-4 {
+    background-color: darkgoldenrod;
+    color: white;
+    width: 250px;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+}
+
+#titulo {
+   width: 70%;
+   background-color: aquamarine;
+
+}
+
+#ads {
+    width: 30%;
+    background-color:aqua;
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+}
+
+#nav {
+    background-color: antiquewhite;
+    width: 30%;
+}
+
+#dynamic {
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    width: 70%;
+}

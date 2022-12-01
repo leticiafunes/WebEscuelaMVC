@@ -1,0 +1,37 @@
+﻿
+@model WebEscuelaMVC.Models.Aula
+@{
+    ViewBag.Title = "Crear Aula";
+}
+
+<h2>Crear Aula</h2>
+@using (Html.BeginForm("Create", "Aula", FormMethod.Post))
+{
+    <p>
+        @Html.LabelFor(model => model.Numero)
+        @Html.EditorFor(model => model.Numero)
+        @Html.ValidationMessageFor(model => model.Numero)
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.Estado)
+        @Html.EditorFor(model => model.Estado)
+        @Html.ValidationMessageFor(model => model.Estado)
+    </p>
+
+    <input type="submit" value="Crear" />
+
+    @Html.ActionLink("Volver", "Index", "Aula")
+
+}
+
+@section nav{
+    <p>NAV</p>
+    <ul>
+        <li><a href="#link1">Link1</a></li>
+        <li><a href="#link2">Link2</a></li>
+        <li><a href="#link3">Link3</a></li>
+        <li><a href="#link4">Link4</a></li>
+    </ul>
+
+}

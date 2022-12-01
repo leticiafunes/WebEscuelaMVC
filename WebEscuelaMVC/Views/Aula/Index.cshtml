@@ -1,0 +1,29 @@
+﻿@model WebEscuelaMVC.Models.Aula
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <h2>Todas las Aulas</h2>
+
+    <div class="grilla">
+        @Html.Action("_AulaGallery", "Aula")  <!-- Renderiza la vista parcial AuaGAllery con el Controlador Aula -->
+    </div>
+    <p>
+        @Html.ActionLink("Nuevo Aula",
+        "Create", "Aula")
+    </p>
+
+</div>
+
+@section nav{
+    <h2>NAV</h2>
+    <ul>
+        <li><a href="#link1">Ejemplo de Link 1</a></li>
+        <li><a href="#link2">Ejemplo de Link 1</a></li>
+        <li><a href="#link3">Ejemplo de Link 1</a></li>
+        <li><a href="#link4">Ejemplo de Link 1</a></li>
+    </ul>
+
+}

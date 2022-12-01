@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <div class="header">
+        <div id="titulo">
+            <h2>WEBEscuelaMVC</h2>
+        </div>
+        <div id="ads">
+            <h2>AulaController</h2>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div id="nav">
+            @if (IsSectionDefined("nav"))
+            {
+                @RenderSection("nav")
+            }
+            else
+                {
+                    <h2>NAV</h2>
+                }
+        </div>
+
+        <div id="dynamic">
+            <div id="aula">
+                <h2>Modelo: Aula</h2>
+                <div>
+                    @RenderBody()
+                </div>
+            </div>
+
+
+            <div id="footer">
+                <h2>Footer</h2>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
